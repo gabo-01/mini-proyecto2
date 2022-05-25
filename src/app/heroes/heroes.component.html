@@ -1,0 +1,32 @@
+<h1 class="text-center">Heroes <small>Marvel y DC</small></h1>
+
+<div class="card-columns ">
+
+    <div class="card" *ngFor="let h of misHeroes, let i=index">
+        <img src={{h.img}} class="card-img-top" alt="...">
+        <div class="rows">
+            <div class="card-body col lg-2">
+                <h5 class="card-title">{{h.nombre}}</h5>
+                <p class="card-text">{{h.bio}} </p>
+                <p class="card-text"> <small class="text-muted">{{h.aparicion}} </small> </p>
+            </div>
+        </div>
+
+        <a [routerLink]="['/heroe',i]" class="mb-3 btn btn-outline-primary btn-block">VerMas</a>
+    </div>
+</div>
+<!-- <div class="container-fluid">
+    <div class="row card-row">
+        <div *ngFor="let h of misHeroes, let i=index" class=" card col-6 col-sm-4 col-md-3 col-lg-2" >
+            <img src={{h.img}} class="card-img-top" alt="...">
+            <div class="rows">
+                <div class="card-body " >
+                    <h5 class="card-title">{{h.nombre}}</h5>
+                    <p class="card-text">{{h.bio}} </p>
+                    <p class="card-text"> <small class="text-muted">{{h.aparicion}} </small> </p>
+                </div>
+            </div>
+            <a [routerLink]="['/heroe',i]" class="mb-3 btn btn-outline-primary btn-block">Ver Mas</a>
+        </div>
+    </div>
+</div> -->

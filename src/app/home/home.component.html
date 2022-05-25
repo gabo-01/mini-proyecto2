@@ -1,0 +1,44 @@
+<div class="jumbotron">
+    <h1 class="display-4">Hola, bienvenidos a nuestra página</h1>
+    <p class="lead">Es una página simple con informacion de heroes de comics</p>
+    <hr class="my-4">
+    <p>Si quieres recibir actualizada y relevante sobre el tema, registrate!!</p>
+    <a class="btn btn-primary btn-lg" href="#openModal" role="button">Registrar datos</a>
+</div>
+<div id="openModal" class="modalDialog">
+    <div>
+        <a href="#" title="Close" class="close">X</a>
+        <h2>Registro de datos</h2>
+        <form action="">
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <td><input type="text" id="nombre" /></td>
+                </tr>
+                <tr>
+                    <th>Sexo</th>
+                    <td>
+                        <select id="sexo">
+
+                            <option value="Hombre">Hombre</option>
+
+                            <option value="Mujer">Mujer</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Correo</th>
+                    <td><input type="text" id="correo" /></td>
+                </tr>
+                <tr>
+                    <th>Fecha de nacimiento</th>
+                    <td><input type="date" id="fecha" /></td>
+                </tr>
+                <tr>
+                    <td><input [routerLink]="['/home']" type="button" value="Guardar" (click)="alta()" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>

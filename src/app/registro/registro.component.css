@@ -1,0 +1,12 @@
+table[id=listado]{
+    margin: auto;
+    margin-top: 20px;
+    background-color: blue;
+    border: 5px solid rgba(black);
+    display:table;
+    color: white;
+}
+td{
+    border: 5px solid rgba(black);
+    margin: auto;
+}
